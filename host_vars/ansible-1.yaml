@@ -1,0 +1,80 @@
+- changed
+- failed
+- msg
+- output
+- branch_name
+- branches
+- name
+- path
+- - enabled: true
+    name: GigabitEthernet1
+  - enabled: true
+    name: GigabitEthernet2
+  - enabled: true
+    name: GigabitEthernet3
+  - enabled: true
+    name: GigabitEthernet4
+  - enabled: true
+    name: Loopback0
+- - name: Loopback0
+  - name: GigabitEthernet1
+  - name: GigabitEthernet2
+  - name: GigabitEthernet3
+  - name: GigabitEthernet4
+- - ipv4:
+    - dhcp:
+        enable: true
+    name: GigabitEthernet1
+  - ipv4:
+    - address: 192.168.12.1/24
+    ipv6:
+    - address: 2001:DB8:1::1/64
+    name: GigabitEthernet2
+  - ipv4:
+    - address: 192.168.1.1/24
+    ipv6:
+    - address: 2001:DB8:2::1/64
+    name: GigabitEthernet3
+  - name: GigabitEthernet4
+  - ipv6:
+    - address: 2001:DB8::1/128
+    name: Loopback0
+- account.smart_account: <none>
+  account.virtual_account: <none>
+  agent.version: 5.9.18_rel/75
+  build_info:
+    compiled_by: mcpre
+    compiled_date: Wed 13-Dec-23 21:43
+  config_register: 8450
+  data_privacy.hostname_privacy: DISABLED
+  data_privacy.version_privacy: DISABLED
+  detailed_info:
+    detailed_version: 17.13.1a
+    product: Virtual XE Software (X86_64_LINUX_IOSD-UNIVERSALK9-M)
+  device_name: R1
+  hardware:
+    model: ' Cisco C8000V'
+    processor: VXE
+    serial_number: 9Q1881850P7
+  last_reload_reason: factory-reset
+  license:
+    smart_licensing: Smart Licensing Using Policy
+    type: Perpetual
+  license_conversion.enabled: true
+  license_overall.status: NOT INSTALLED
+  memory:
+    bootflash: 5234688K
+    nvram: 32768K
+    physical: 3960676K
+    total_mb: 1969.97265625
+  miscellaneous.custom_id: <empty>
+  policy.ack_required: yes (CISCO default)
+  policy.in_use: Merged from multiple sources.
+  product_info.pid: C8000V
+  product_info.serial: 9Q1881850P7
+  reload_reason: reload
+  smart_licensing.status: ENABLED
+  system_image: bootflash:packages.conf
+  transport.type: cslu
+  transport.vrf: <empty>
+  version: 17.13.01a
